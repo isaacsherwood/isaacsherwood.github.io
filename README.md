@@ -1,1 +1,24 @@
-# isaacsherwood.github.io
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Isaac Sherwood - Home</title>
+</head>
+<p style="font-size: 20px; color:#1F9AFE;">
+</p>
+<section id="About Me">
+		<h2>About Me</h2>
+		<p>Hi, I'm <span onclick="location.href='Camel.webp';">Isaac Sherwood</span>, a Physics major at the University of Maryland College Park! My primary research interest is in solid state physics and quantum materials. Here is my
+<a href="resume.pdf">resume</a>. This is me:</p>
+<img src="me.webp" width="300" height="300">
+<section id="Current Projects">
+		<h2>Current Projects</h2>
+		<ul>
+			<li>I am currently working in Professor Ichiro Takeuchi's lab, researching unconventional superconductors and superconducting devices.
+			<li>I am also working in Professor Mohammad Hafezi's lab, researching the potential for using nanopatterning to engineer the critical temperature of superconductors.
+			<li>I recently finished participating in the 2026 Summer Student Theoretical Physics Research Session with professor Sylvester James Gates, and am continuing work with him on supersymmetric algebras. We are investigating what happens when we look at projections of 4d supersymmetric theories into 3d spacetime.
+<section 
