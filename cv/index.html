@@ -2,209 +2,375 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Sherwood - CV</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #0056b3; /* A subtle professional blue */
+            --secondary-text: #666666;
+            --border-color: #eeeeee;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #000;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+            color: var(--secondary-text);
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* Navigation Aids */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            color: #000;
+            font-size: 1.5rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .date {
+            color: var(--secondary-text);
+            font-style: italic;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul { justify-content: center; }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Isaac Sherwood</h1>
-    <p>University of Maryland, College Park, Department of Physics</p>
-    <p>isherwoo@umd.edu | linkedin.com/in/isaacsherwood</p>
+<div class="container">
+    <header>
+        <h1>Isaac Sherwood</h1>
+        <div class="contact-info">
+            University of Maryland, College Park, Department of Physics<br>
+            <a href="mailto:isherwoo@umd.edu">isherwoo@umd.edu</a> | 
+            <a href="https://linkedin.com/in/isaacsherwood" target="_blank">linkedin.com/in/isaacsherwood</a>
+        </div>
+    </header>
 
-    <hr>
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-    <h2>Education</h2>
-    <p><strong>University of Maryland (UMD)</strong></p>
-    <p>College Park, MD</p>
-    <p>B.S. Physics</p>
-    <p>Graduation May 2027</p>
+    <section id="education">
+        <h2>Education</h2>
+        <strong>University of Maryland (UMD)</strong><br>
+        College Park, MD<br>
+        B.S. Physics<br>
+        <span class="date">Graduation May 2027</span>
+    </section>
 
-    <h2>Honors and Awards</h2>
-    <p>Sigma Pi Sigma inductee (April 2026)</p>
-    <p>Dean’s List (Fall 2025 – Present)</p>
+    <section id="honors">
+        <h2>Honors and Awards</h2>
+        <p>Sigma Pi Sigma inductee <span class="date">(April 2026)</span></p>
+        <p>Dean’s List <span class="date">(Fall 2025 – Present)</span></p>
+    </section>
 
-    <h2>Presentations</h2>
-    <p><strong>Metamaterial Engineering of Quantum Devices</strong></p>
-    <p>July 2026</p>
-    <p>M. Hafezi, V. Galitski, A. Yacoby, A. Park, I. Sherwood</p>
-    <p>DARPA SynQuaNon Program Review Meeting, Alexandria, VA</p>
+    <section id="presentations">
+        <h2>Presentations</h2>
+        <strong>Metamaterial Engineering of Quantum Devices</strong><br>
+        <span class="date">July 2026</span><br>
+        M. Hafezi, V. Galitski, A. Yacoby, A. Park, I. Sherwood<br>
+        DARPA SynQuaNon Program Review Meeting, Alexandria, VA
+    </section>
 
-    <h2>Professional Experience</h2>
+    <section id="experience">
+        <h2>Professional Experience</h2>
 
-    <p><strong>Joint Quantum Institute, Dept. of Physics, UMD</strong></p>
-    <p>Research Assistant</p>
-    <p>September 2025 – Present</p>
-    <ul>
-        <li>Investigating the effects of nanopatterning on the behavior of superconducting materials in Professor Mohammad Hafezi’s lab.</li>
-        <li>Fabrication and characterization of nanoscale devices using electron beam lithography, scanning electron microscopy, reactive ion etching, and low temperature measurements.</li>
-    </ul>
-
-    <p><strong>Quantum Materials Center, Dept. of Materials Science and Engineering, UMD</strong></p>
-    <p>Research Assistant</p>
-    <p>August 2024 – Present</p>
-    <ul>
-        <li>Experimental research in superconductors and topological materials, focusing on device fabrication and quantum transport phenomena, in Professor Ichiro Takeuchi’s lab.</li>
-        <li>Fabricating spin injection devices using photolithography, ion beam etching, and other fabrication techniques; performing low temperature measurements.</li>
-    </ul>
-
-    <p><strong>Summer Student Theoretical Physics Research Session</strong></p>
-    <p>Dept. of Physics, Undergraduate Researcher</p>
-    <p>June 2026 – Present</p>
-    <ul>
-        <li>Studying theoretical physics with a focus on supersymmetric theories and the underlying mathematical structures, including Lie groups and algebras, Clifford algebras, and differential geometry, mentored by Professor Sylvester James Gates Jr.</li>
-        <li>Researching the dimensional reduction of four-dimensional N = 1 supersymmetric algebras and their representations in three-dimensional space time.</li>
-    </ul>
-
-    <p><strong>Blue Wave Semiconductors, Inc.</strong></p>
-    <p>Technical Intern (Jun 2023 – Jan 2024)</p>
-    <p>High School Apprentice (Oct 2022 – Jun 2023)</p>
-    <ul>
-        <li>Led research in developing new techniques for fusion and eutectic bonding of semiconductor and insulating materials.</li>
-        <li>Assisted in construction, operation, and maintenance of ultra-high vacuum and thin film deposition systems for research and industrial fabrication including thermal evaporators, pulsed laser deposition, sputtering, and chemical vapor deposition systems.</li>
-        <li>Worked on a team to write project proposals and conduct background research for potential research projects and business partnerships.</li>
-    </ul>
-
-    <p><strong>Department of Physics Summer Programs, UMD</strong></p>
-    <p>Summer Camp Counselor</p>
-    <p>June 2026 – July 2026</p>
-    <ul>
-        <li>Summer camp counselor for The Amazing Science Discovery Camp and Advanced Physics Summer Program at UMD.</li>
-        <li>Led group activities, presented demonstrations, taught lessons to students between the 3rd and 12th grades.</li>
-    </ul>
-
-    <p><strong>Department of Physics, UMD</strong></p>
-    <p>Teaching Assistant for Modern Physics</p>
-    <p>January 2026 – Present</p>
-    <ul>
-        <li>Teaching assistant for Modern Physics, an upper-level degree requirement for physics majors covering early quantum mechanics, thermodynamics, and special relativity.</li>
-        <li>Holding group problem solving sessions, proctoring exams, grading exams and homework assignments, answering student questions and providing academic support.</li>
-    </ul>
-
-    <p><strong>Society of Physics Students, UMD Chapter</strong></p>
-    <p>Paid Physics Tutor (January 2025 – Present)</p>
-    <p>Volunteer Physics Tutor (September 2024 – December 2024)</p>
-    <ul>
-        <li>Paid tutor tutoring undergraduate physics and engineering majors in introductory mechanics, electricity and magnetism, and upper-level physics courses.</li>
-    </ul>
-
-    <p><strong>College of Information Science, UMD</strong></p>
-    <p>Archival Research Secretary</p>
-    <p>February 2024 – August 2024</p>
-    <ul>
-        <li>Worked with members of the Piscataway Conoy Tribe and university archivists to locate culturally significant images, documents, and artifacts for use in an upcoming book and the tribe’s ongoing education projects, ensuring proper copyright permissions.</li>
-    </ul>
-
-    <hr>
-
-    <h2>Leadership and Volunteer Experience</h2>
-
-    <p><strong>Society of Physics Students, UMD Chapter</strong></p>
-    <p>President (June 2026 – Present)</p>
-    <p>Outreach Coordinator (June 2025 – June 2026)</p>
-    <p>Member (September 2023 – Present)</p>
-    <ul>
-        <li>Organized a public lecture series focused on ongoing physics research and career development featuring 10+ faculty speakers.</li>
-        <li>Planned physics demonstration shows, recruitment events, fundraisers, weekly meetings, resume workshops, career development workshops, and social gatherings for undergraduate physics majors at UMD.</li>
-        <li>Worked on an organizing committee to plan and run the 2025 Society of Physics Students Zone 4 Meeting, including student talks and presentations, a poster session, and lab tours.</li>
-    </ul>
-
-    <p><strong>Physics Department Outreach, UMD</strong></p>
-    <p>Outreach Presenter</p>
-    <p>September 2024 – Present</p>
-    <ul>
-        <li>Planning and running outreach events at the UMD Physics Department for elementary, middle, and high schoolers, as well as the general public.</li>
-        <li>Involved with over 20 outreach events, including Physics is Phun, Discovery Days, Maryland Day, local high school visits, and other educational science programs for the community.</li>
-    </ul>
-
-    <p><strong>QURISE Local Organizing Committee, Department of Physics, UMD</strong></p>
-    <p>Conference Organizer</p>
-    <p>December 2025 – January 2026</p>
-    <ul>
-        <li>Planned and organized events and lab tours for 60+ attendees at a quantum research conference hosted at UMD.</li>
-    </ul>
-
-    <p><strong>Engineers Without Borders, UMD Chapter</strong></p>
-    <p>Treasurer (May 2024 – June 2025)</p>
-    <p>Structures Team Member (September 2023 – June 2025)</p>
-    <ul>
-        <li>Managed all money and resources for the university-wide organization chapter.</li>
-        <li>Designed and implemented sanitation and water facilities for St. Anne Grace School in Nakifuma, Uganda and a health clinic in Guatemala with a focus in structural design.</li>
-    </ul>
-
-    <hr>
-
-    <h2>Technical Skills</h2>
-
-    <p><strong>Mathematics:</strong></p>
-    <ul>
-        <li>Algebra: linear algebra; groups, rings, fields, Galois theory; Lie groups and Lie algebras</li>
-        <li>Calculus; multivariable calculus, ordinary and partial differential equations</li>
-        <li>Python programming</li>
-    </ul>
-
-    <p><strong>Nanofabrication and characterization:</strong></p>
-    <ul>
-        <li>Electron-beam lithography, maskless photolithography</li>
-        <li>Wet chemical etching, reactive ion etching, ion beam etching</li>
-        <li>Scanning electron microscopy, atomic force microscopy, optical microscopy</li>
-        <li>Low temperature superconductivity measurements</li>
-    </ul>
-
-    <p><strong>Thin film deposition and vacuum systems:</strong></p>
-    <ul>
-        <li>Ultra-high vacuum system construction, repair, and maintenance</li>
-        <li>Sputtering, thermal evaporation, electron beam evaporation</li>
-        <li>Chemical vapor deposition</li>
-    </ul>
-
-    <p><strong>Other Skills:</strong></p>
-    <ul>
-        <li>Writing grant proposals, technical articles</li>
-        <li>Typesetting in Latex</li>
-        <li>CAD: Autodesk Fusion 360, AutoCAD, KLayout</li>
-    </ul>
-
-    <hr>
-
-    <h2>Coursework</h2>
-
-    <p><strong>University of Maryland</strong></p>
-    <p>September 2023 – Present</p>
-    <ul>
-        <li>Physics Coursework:
+        <div>
+            <strong>Joint Quantum Institute, Dept. of Physics, UMD</strong>
+            <span class="job-title">Research Assistant</span>
+            <span class="date">September 2025 – Present</span>
             <ul>
-                <li>Quantum Physics I</li>
-                <li>Quantum Physics II</li>
-                <li>Statistical Thermodynamics</li>
-                <li>Particle Astrophysics</li>
-                <li>Modern Physics</li>
-                <li>Intermediate Electricity and Magnetism</li>
-                <li>Python Programming</li>
+                <li>Investigating the effects of nanopatterning on the behavior of superconducting materials in Professor Mohammad Hafezi’s lab.</li>
+                <li>Fabrication and characterization of nanoscale devices using electron beam lithography, scanning electron microscopy, reactive ion etching, and low temperature measurements.</li>
             </ul>
-        </li>
-        <li>Mathematics Coursework:
-            <ul>
-                <li>Introduction to Abstract Algebra (Group Theory)</li>
-                <li>Linear Algebra (Advanced)</li>
-                <li>Field Theory (Galois Theory)</li>
-                <li>Euclidean and Non-Euclidean Geometry</li>
-                <li>Introduction to Mathematical Proof</li>
-            </ul>
-        </li>
-        <li>Other relevant coursework:
-            <ul>
-                <li>Nuclear Reactor Design</li>
-                <li>Nuclear Reactor Systems and Safety</li>
-                <li>Technical Writing</li>
-                <li>Teaching STEM</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
 
-    <p><strong>Rangjung Yeshe Institute, Kathmandu University</strong></p>
-    <p>June 2025 – August 2025</p>
-    <ul>
-        <li>Buddhist Studies Summer Intensive Program: Formal study of Buddhist philosophy and history on campus at Ka Nying Shedrub Ling Monastery with a focus on Tibetan Buddhism</li>
-    </ul>
+        <div>
+            <strong>Quantum Materials Center, Dept. of Materials Science and Engineering, UMD</strong>
+            <span class="job-title">Research Assistant</span>
+            <span class="date">August 2024 – Present</span>
+            <ul>
+                <li>Experimental research in superconductors and topological materials, focusing on device fabrication and quantum transport phenomena, in Professor Ichiro Takeuchi’s lab.</li>
+                <li>Fabricating spin injection devices using photolithography, ion beam etching, and other fabrication techniques; performing low temperature measurements.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Summer Student Theoretical Physics Research Session</strong>
+            <span class="job-title">Dept. of Physics, Undergraduate Researcher</span>
+            <span class="date">June 2026 – Present</span>
+            <ul>
+                <li>Studying theoretical physics with a focus on supersymmetric theories and the underlying mathematical structures, including Lie groups and algebras, Clifford algebras, and differential geometry, mentored by Professor Sylvester James Gates Jr.</li>
+                <li>Researching the dimensional reduction of four-dimensional N = 1 supersymmetric algebras and their representations in three-dimensional space time.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Blue Wave Semiconductors, Inc.</strong>
+            <span class="job-title">Technical Intern (Jun 2023 – Jan 2024)</span>
+            <span class="job-title">High School Apprentice (Oct 2022 – Jun 2023)</span>
+            <ul>
+                <li>Led research in developing new techniques for fusion and eutectic bonding of semiconductor and insulating materials.</li>
+                <li>Assisted in construction, operation, and maintenance of ultra-high vacuum and thin film deposition systems for research and industrial fabrication including thermal evaporators, pulsed laser deposition, sputtering, and chemical vapor deposition systems.</li>
+                <li>Worked on a team to write project proposals and conduct background research for potential research projects and business partnerships.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Department of Physics Summer Programs, UMD</strong>
+            <span class="job-title">Summer Camp Counselor</span>
+            <span class="date">June 2026 – July 2026</span>
+            <ul>
+                <li>Summer camp counselor for The Amazing Science Discovery Camp and Advanced Physics Summer Program at UMD.</li>
+                <li>Led group activities, presented demonstrations, taught lessons to students between the 3rd and 12th grades.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Department of Physics, UMD</strong>
+            <span class="job-title">Teaching Assistant for Modern Physics</span>
+            <span class="date">January 2026 – Present</span>
+            <ul>
+                <li>Teaching assistant for Modern Physics, an upper-level degree requirement for physics majors covering early quantum mechanics, thermodynamics, and special relativity.</li>
+                <li>Holding group problem solving sessions, proctoring exams, grading exams and homework assignments, answering student questions and providing academic support.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Society of Physics Students, UMD Chapter</strong>
+            <span class="job-title">Paid Physics Tutor (January 2025 – Present)</span>
+            <span class="job-title">Volunteer Physics Tutor (September 2024 – December 2024)</span>
+            <ul>
+                <li>Paid tutor tutoring undergraduate physics and engineering majors in introductory mechanics, electricity and magnetism, and upper-level physics courses.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>College of Information Science, UMD</strong>
+            <span class="job-title">Archival Research Secretary</span>
+            <span class="date">February 2024 – August 2024</span>
+            <ul>
+                <li>Worked with members of the Piscataway Conoy Tribe and university archivists to locate culturally significant images, documents, and artifacts for use in an upcoming book and the tribe’s ongoing education projects, ensuring proper copyright permissions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <h2>Leadership and Volunteer Experience</h2>
+
+        <div>
+            <strong>Society of Physics Students, UMD Chapter</strong>
+            <span class="job-title">President (June 2026 – Present)</span>
+            <span class="job-title">Outreach Coordinator (June 2025 – June 2026)</span>
+            <span class="job-title">Member (September 2023 – Present)</span>
+            <ul>
+                <li>Organized a public lecture series focused on ongoing physics research and career development featuring 10+ faculty speakers.</li>
+                <li>Planned physics demonstration shows, recruitment events, fundraisers, weekly meetings, resume workshops, career development workshops, and social gatherings for undergraduate physics majors at UMD.</li>
+                <li>Worked on an organizing committee to plan and run the 2025 Society of Physics Students Zone 4 Meeting, including student talks and presentations, a poster session, and lab tours.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Physics Department Outreach, UMD</strong>
+            <span class="job-title">Outreach Presenter</span>
+            <span class="date">September 2024 – Present</span>
+            <ul>
+                <li>Planning and running outreach events at the UMD Physics Department for elementary, middle, and high schoolers, as well as the general public.</li>
+                <li>Involved with over 20 outreach events, including Physics is Phun, Discovery Days, Maryland Day, local high school visits, and other educational science programs for the community.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>QURISE Local Organizing Committee, Department of Physics, UMD</strong>
+            <span class="job-title">Conference Organizer</span>
+            <span class="date">December 2025 – January 2026</span>
+            <ul>
+                <li>Planned and organized events and lab tours for 60+ attendees at a quantum research conference hosted at UMD.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Engineers Without Borders, UMD Chapter</strong>
+            <span class="job-title">Treasurer (May 2024 – June 2025)</span>
+            <span class="job-title">Structures Team Member (September 2023 – June 2025)</span>
+            <ul>
+                <li>Managed all money and resources for the university-wide organization chapter.</li>
+                <li>Designed and implemented sanitation and water facilities for St. Anne Grace School in Nakifuma, Uganda and a health clinic in Guatemala with a focus in structural design.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <strong>Mathematics:</strong>
+                <ul>
+                    <li>Algebra: linear algebra; groups, rings, fields, Galois theory; Lie groups and Lie algebras</li>
+                    <li>Calculus; multivariable calculus, ordinary and partial differential equations</li>
+                    <li>Python programming</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Nanofabrication & Characterization:</strong>
+                <ul>
+                    <li>Electron-beam lithography, maskless photolithography</li>
+                    <li>Wet chemical etching, reactive ion etching, ion beam etching</li>
+                    <li>Scanning electron microscopy, atomic force microscopy, optical microscopy</li>
+                    <li>Low temperature superconductivity measurements</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Thin Film & Vacuum Systems:</strong>
+                <ul>
+                    <li>Ultra-high vacuum system construction, repair, and maintenance</li>
+                    <li>Sputtering, thermal evaporation, electron beam evaporation</li>
+                    <li>Chemical vapor deposition</li>
+                </ul>
+            </div>
+            <div>
+                <strong>Other Skills:</strong>
+                <ul>
+                    <li>Writing grant proposals, technical articles</li>
+                    <li>Typesetting in Latex</li>
+                    <li>CAD: Autodesk Fusion 360, AutoCAD, KLayout</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="coursework">
+        <h2>Coursework</h2>
+        <p><strong>University of Maryland</strong> <span class="date">September 2023 – Present</span></p>
+        <ul>
+            <li>Physics Coursework:
+                <ul>
+                    <li>Quantum Physics I & II</li>
+                    <li>Statistical Thermodynamics</li>
+                    <li>Particle Astrophysics</li>
+                    <li>Modern Physics</li>
+                    <li>Intermediate Electricity and Magnetism</li>
+                    <li>Python Programming</li>
+                </ul>
+            </li>
+            <li>Mathematics Coursework:
+                <ul>
+                    <li>Introduction to Abstract Algebra (Group Theory)</li>
+                    <li>Linear Algebra (Advanced)</li>
+                    <li>Field Theory (Galois Theory)</li>
+                    <li>Euclidean and Non-Euclidean Geometry</li>
+                    <li>Introduction to Mathematical Proof</li>
+                </ul>
+            </li>
+            <li>Other relevant coursework:
+                <ul>
+                    <li>Nuclear Reactor Design</li>
+                    <li>Nuclear Reactor Systems and Safety</li>
+                    <li>Technical Writing</li>
+                    <li>Teaching STEM</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Rangjung Yeshe Institute, Kathmandu University</strong> <span class="date">June 2025 – August 2025</span></p>
+        <ul>
+            <li>Buddhist Studies Summer Intensive Program: Formal study of Buddhist philosophy and history on campus at Ka Nying Shedrub Ling Monastery with a focus on Tibetan Buddhism</li>
+        </ul>
+    </section>
+</div>
 
 </body>
 </html>
