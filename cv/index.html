@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Isaac Sherwood - CV</title>
     <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --accent-color: #0056b3; /* A subtle professional blue */
-            --secondary-text: #666666;
-            --border-color: #eeeeee;
+        /* Basic layout and behavior */
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
         }
 
         .container {
@@ -28,24 +24,24 @@
             padding: 40px 20px;
         }
 
+        /* Header Styling */
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h1 {
             margin: 0;
             font-size: 2.5rem;
-            color: #000;
         }
 
         .contact-info {
             margin-top: 10px;
-            color: var(--secondary-text);
+            color: #666666;
         }
 
         .contact-info a {
-            color: var(--accent-color);
+            color: #0056b3;
             text-decoration: none;
         }
 
@@ -53,16 +49,16 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 15px 0;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 40px;
-            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 0;
+            border-bottom: 1px solid #eeeeee;
+            z-index: 1000;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -71,21 +67,24 @@
 
         nav a {
             text-decoration: none;
-            color: var(--text-color);
+            color: #333333;
             font-weight: bold;
             font-size: 0.9rem;
         }
 
         nav a:hover {
-            color: var(--accent-color);
+            color: #0056b3;
         }
 
+        /* Content Sections */
         section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            /* This prevents the nav bar from covering the heading when jumping to an anchor */
+            scroll-margin-top: 90px; 
         }
 
         h2 {
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #eeeeee;
             padding-bottom: 8px;
             color: #000;
             font-size: 1.5rem;
@@ -94,11 +93,11 @@
         .job-title {
             font-weight: bold;
             display: block;
-            margin-top: 5px;
+            margin-top: 2px;
         }
 
         .date {
-            color: var(--secondary-text);
+            color: #666666;
             font-style: italic;
         }
 
@@ -110,14 +109,11 @@
             margin-bottom: 8px;
         }
 
+        /* Simple Grid for Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-        }
-
-        @media (max-width: 600px) {
-            nav ul { justify-content: center; }
         }
     </style>
 </head>
